@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Implied Radar</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+  <div class="kicker">RESEARCH NOTE · TOKEN RADAR</div>
+  <h1>Implied Radar</h1>
+  <p class="sub">Conditional implied value if a token were issued — never a launch prediction.</p>
+  <div class="proof" id="proof"></div>
+  <div style="margin-top:8px"><button id="recomputeBadge" class="badge" type="button">recompute: checking…</button> <span id="recomputeNote" class="muted"></span></div>
+</header>
+<nav class="tabs">
+  <button data-tab="1" type="button" class="tab on">§1 Pre-Token Radar</button>
+  <button data-tab="2" type="button" class="tab">§2 Model &amp; Validation</button>
+  <button data-tab="3" type="button" class="tab">§3 Census &amp; Methodology</button>
+</nav>
+<main>
+  <section id="tab1" class="pane on">
+    <div class="controls" id="controls"></div>
+    <div class="split">
+      <div class="tablewrap"><table id="board"><thead></thead><tbody></tbody></table><div id="boardCount" class="muted"></div></div>
+      <aside id="drawer" class="drawer" hidden></aside>
+    </div>
+    <div id="compare" hidden></div>
+  </section>
+  <section id="tab2" class="pane" hidden>
+    <div id="scatterBox"></div>
+    <div id="validationBox"></div>
+    <div id="refBox"></div>
+  </section>
+  <section id="tab3" class="pane" hidden>
+    <div id="censusBox"></div>
+  </section>
+</main>
+<footer>Deterministic ranking from one sealed snapshot. Not investment advice.</footer>
+<div id="drill" class="drill" hidden></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
